@@ -1,0 +1,9 @@
+C:\Users\User\source\repos\Recipies\Recipies\bin\Debug\Recipies.exe.config
+C:\Users\User\source\repos\Recipies\Recipies\bin\Debug\Recipies.exe
+C:\Users\User\source\repos\Recipies\Recipies\bin\Debug\Recipies.pdb
+C:\Users\User\source\repos\Recipies\Recipies\obj\Debug\Recipies.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Recipies\Recipies\obj\Debug\Recipies.MainWindow.resources
+C:\Users\User\source\repos\Recipies\Recipies\obj\Debug\Recipies.Properties.Resources.resources
+C:\Users\User\source\repos\Recipies\Recipies\obj\Debug\Recipies.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Recipies\Recipies\obj\Debug\Recipies.exe
+C:\Users\User\source\repos\Recipies\Recipies\obj\Debug\Recipies.pdb
