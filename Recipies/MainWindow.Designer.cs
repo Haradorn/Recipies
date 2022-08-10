@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.mainMenuStrip = new System.Windows.Forms.MenuStrip();
             this.информацияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,10 +37,12 @@
             this.mainMenuTab = new System.Windows.Forms.TabControl();
             this.menuTab1 = new System.Windows.Forms.TabPage();
             this.countriesRecepiesGroupBox = new System.Windows.Forms.GroupBox();
+            this.splitter2 = new System.Windows.Forms.Splitter();
             this.countryRecepiesList = new System.Windows.Forms.ListBox();
             this.countriesDataGridView = new System.Windows.Forms.DataGridView();
             this.menuTab2 = new System.Windows.Forms.TabPage();
             this.healthGroupGroupBox = new System.Windows.Forms.GroupBox();
+            this.splitter1 = new System.Windows.Forms.Splitter();
             this.healthGroupListBox = new System.Windows.Forms.ListBox();
             this.healthGroupDataGridView = new System.Windows.Forms.DataGridView();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -49,6 +52,7 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.button1 = new System.Windows.Forms.Button();
             this.mainMenuStrip.SuspendLayout();
             this.mainMenuTab.SuspendLayout();
             this.menuTab1.SuspendLayout();
@@ -82,7 +86,7 @@
             // 
             // оПрограммеToolStripMenuItem
             // 
-            this.оПрограммеToolStripMenuItem.Image = global::Recipies.Properties.Resources._11573231501558095979_128;
+            this.оПрограммеToolStripMenuItem.Image = global::Recipies.Properties.Resources.info_icon;
             this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
             this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.оПрограммеToolStripMenuItem.Text = "О программе";
@@ -90,7 +94,7 @@
             // 
             // выходToolStripMenuItem
             // 
-            this.выходToolStripMenuItem.Image = global::Recipies.Properties.Resources._20814518601537355605_128;
+            this.выходToolStripMenuItem.Image = global::Recipies.Properties.Resources.logout_icon;
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
             this.выходToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.выходToolStripMenuItem.Text = "Выход";
@@ -124,6 +128,7 @@
             // countriesRecepiesGroupBox
             // 
             this.countriesRecepiesGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.countriesRecepiesGroupBox.Controls.Add(this.splitter2);
             this.countriesRecepiesGroupBox.Controls.Add(this.countryRecepiesList);
             this.countriesRecepiesGroupBox.Controls.Add(this.countriesDataGridView);
             this.countriesRecepiesGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -135,28 +140,35 @@
             this.countriesRecepiesGroupBox.TabStop = false;
             this.countriesRecepiesGroupBox.Text = "Рецепты из разных стран";
             // 
+            // splitter2
+            // 
+            this.splitter2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.splitter2.Location = new System.Drawing.Point(319, 22);
+            this.splitter2.Name = "splitter2";
+            this.splitter2.Size = new System.Drawing.Size(3, 449);
+            this.splitter2.TabIndex = 5;
+            this.splitter2.TabStop = false;
+            // 
             // countryRecepiesList
             // 
-            this.countryRecepiesList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.countryRecepiesList.BackColor = System.Drawing.SystemColors.Menu;
             this.countryRecepiesList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.countryRecepiesList.Dock = System.Windows.Forms.DockStyle.Right;
             this.countryRecepiesList.FormattingEnabled = true;
             this.countryRecepiesList.ItemHeight = 20;
-            this.countryRecepiesList.Location = new System.Drawing.Point(308, 38);
+            this.countryRecepiesList.Location = new System.Drawing.Point(322, 22);
             this.countryRecepiesList.Name = "countryRecepiesList";
-            this.countryRecepiesList.Size = new System.Drawing.Size(461, 402);
+            this.countryRecepiesList.Size = new System.Drawing.Size(461, 449);
             this.countryRecepiesList.TabIndex = 4;
             // 
             // countriesDataGridView
             // 
-            this.countriesDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.countriesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.countriesDataGridView.Location = new System.Drawing.Point(17, 25);
+            this.countriesDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.countriesDataGridView.Location = new System.Drawing.Point(3, 22);
             this.countriesDataGridView.Name = "countriesDataGridView";
-            this.countriesDataGridView.Size = new System.Drawing.Size(262, 415);
+            this.countriesDataGridView.ReadOnly = true;
+            this.countriesDataGridView.Size = new System.Drawing.Size(780, 449);
             this.countriesDataGridView.TabIndex = 3;
             // 
             // menuTab2
@@ -174,6 +186,7 @@
             // healthGroupGroupBox
             // 
             this.healthGroupGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.healthGroupGroupBox.Controls.Add(this.splitter1);
             this.healthGroupGroupBox.Controls.Add(this.healthGroupListBox);
             this.healthGroupGroupBox.Controls.Add(this.healthGroupDataGridView);
             this.healthGroupGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -185,28 +198,38 @@
             this.healthGroupGroupBox.TabStop = false;
             this.healthGroupGroupBox.Text = "Рецепты по группам здоровья";
             // 
+            // splitter1
+            // 
+            this.splitter1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.splitter1.Location = new System.Drawing.Point(322, 22);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(3, 449);
+            this.splitter1.TabIndex = 3;
+            this.splitter1.TabStop = false;
+            // 
             // healthGroupListBox
             // 
-            this.healthGroupListBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.healthGroupListBox.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.healthGroupListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.healthGroupListBox.Dock = System.Windows.Forms.DockStyle.Right;
             this.healthGroupListBox.FormattingEnabled = true;
             this.healthGroupListBox.ItemHeight = 20;
-            this.healthGroupListBox.Location = new System.Drawing.Point(310, 36);
+            this.healthGroupListBox.Location = new System.Drawing.Point(325, 22);
             this.healthGroupListBox.Name = "healthGroupListBox";
-            this.healthGroupListBox.Size = new System.Drawing.Size(458, 402);
+            this.healthGroupListBox.Size = new System.Drawing.Size(458, 449);
             this.healthGroupListBox.TabIndex = 1;
             // 
             // healthGroupDataGridView
             // 
-            this.healthGroupDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.healthGroupDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.healthGroupDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.healthGroupDataGridView.Location = new System.Drawing.Point(18, 25);
+            this.healthGroupDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.healthGroupDataGridView.Location = new System.Drawing.Point(3, 22);
             this.healthGroupDataGridView.Name = "healthGroupDataGridView";
-            this.healthGroupDataGridView.Size = new System.Drawing.Size(262, 415);
+            this.healthGroupDataGridView.ReadOnly = true;
+            this.healthGroupDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.healthGroupDataGridView.Size = new System.Drawing.Size(780, 449);
             this.healthGroupDataGridView.TabIndex = 0;
             // 
             // toolStrip1
@@ -227,29 +250,32 @@
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::Recipies.Properties.Resources.add_1_icon;
+            this.toolStripButton1.Image = global::Recipies.Properties.Resources.add_1_icon1;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton1.Text = "Добавить рецепт";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripButton2
             // 
             this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = global::Recipies.Properties.Resources.Pencil_icon;
+            this.toolStripButton2.Image = global::Recipies.Properties.Resources.Pencil_icon1;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton2.Text = "Изменить рецепт";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripButton3
             // 
             this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = global::Recipies.Properties.Resources.delete_icon;
+            this.toolStripButton3.Image = global::Recipies.Properties.Resources.delete_icon1;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton3.Text = "Удалить рецепт";
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // toolStripSeparator1
             // 
@@ -259,7 +285,7 @@
             // toolStripButton4
             // 
             this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton4.Image = global::Recipies.Properties.Resources.print_icon;
+            this.toolStripButton4.Image = global::Recipies.Properties.Resources.print_icon1;
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.Size = new System.Drawing.Size(23, 22);
@@ -268,11 +294,21 @@
             // toolStripButton5
             // 
             this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton5.Image = global::Recipies.Properties.Resources.Actions_document_save_icon;
+            this.toolStripButton5.Image = global::Recipies.Properties.Resources.Actions_document_save_icon1;
             this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton5.Name = "toolStripButton5";
             this.toolStripButton5.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton5.Text = "Сохранить рецепт";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(368, 23);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainWindow
             // 
@@ -280,6 +316,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.ClientSize = new System.Drawing.Size(800, 561);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.mainMenuTab);
             this.Controls.Add(this.mainMenuStrip);
@@ -329,6 +366,9 @@
         private System.Windows.Forms.GroupBox healthGroupGroupBox;
         private System.Windows.Forms.ListBox healthGroupListBox;
         private System.Windows.Forms.DataGridView healthGroupDataGridView;
+        private System.Windows.Forms.Splitter splitter1;
+        private System.Windows.Forms.Splitter splitter2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
