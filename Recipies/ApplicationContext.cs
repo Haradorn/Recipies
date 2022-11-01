@@ -9,12 +9,17 @@ namespace Recipies
     {
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options) { }
         public DbSet<HealthGroup> HealthGroups => Set<HealthGroup>();
-        //public ApplicationContext() => Database.EnsureCreated();
+        public DbSet<Recipie> Recipies => Set<Recipie>();
+        public ApplicationContext()
+        {
+            //Database.EnsureDeleted();
+            Database.EnsureCreated();
+        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-                //optionsBuilder.UseSqlite("Data Source=C:\\Users\\User\\source\\repos\\Recipies\\Recipies\\bin\\Debug\\recipies.db");
+                optionsBuilder.UseSqlite("Data Source=C:\\Users\\User\\source\\repos\\Recipies\\Recipies\\bin\\Debug\\recipies.db");
             }
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

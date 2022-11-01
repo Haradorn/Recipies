@@ -7,17 +7,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Recipies
 {
-    public class HealthGroup
+    public class Recipie
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-
         public byte[] Photo { get; set; }
-        public List<Recipie> Recipies { get; set; }
-        public override string ToString()
-        {
-            return Name;
-        }
+        public int? HealthGroupId { get; set; }
+        public HealthGroup HealthGroup { get; set; }
     }
 }
