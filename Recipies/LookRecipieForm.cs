@@ -51,7 +51,7 @@ namespace Recipies
             text += String.Join(Environment.NewLine, s);
 
             e.Graphics.DrawImage(pictureBox1.Image, 450, 50);
-            e.Graphics.DrawString(nameRecipieLabel.Text, new Font("Arial", 12), Brushes.Black, 10, 50);
+            e.Graphics.DrawString(nameRecipieLabel.Text, new Font("Arial", 14), Brushes.Black, 10, 50);
             e.Graphics.DrawString(text, new Font("Arial", 12), Brushes.Black, 30, 100);
         }
 
