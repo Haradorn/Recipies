@@ -47,10 +47,13 @@
             // 
             // descriptionRecipieLabel
             // 
+            this.descriptionRecipieLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.descriptionRecipieLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.descriptionRecipieLabel.Location = new System.Drawing.Point(442, 149);
             this.descriptionRecipieLabel.Name = "descriptionRecipieLabel";
-            this.descriptionRecipieLabel.Size = new System.Drawing.Size(330, 403);
+            this.descriptionRecipieLabel.Size = new System.Drawing.Size(760, 400);
             this.descriptionRecipieLabel.TabIndex = 1;
             // 
             // pictureBox1
@@ -88,14 +91,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(170)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(1214, 568);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.descriptionRecipieLabel);
             this.Controls.Add(this.nameRecipieLabel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.MaximizeBox = false;
             this.Name = "LookRecipieForm";
             this.Text = "LookRecipieForm";
             this.Load += new System.EventHandler(this.LookRecipieForm_Load);

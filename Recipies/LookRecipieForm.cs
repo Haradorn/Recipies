@@ -46,10 +46,13 @@ namespace Recipies
 
         private void printDocument_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            text = nameRecipieLabel.Text + "\n";
-            text += descriptionRecipieLabel.Text + "\n";
+            int size = 50;
+            IEnumerable<string> s = descriptionRecipieLabel.Text.Split(size);
+            text += String.Join(Environment.NewLine, s);
+
             e.Graphics.DrawImage(pictureBox1.Image, 450, 50);
-            e.Graphics.DrawString(text, new Font("Arial", 12), Brushes.Black, 10, 50);
+            e.Graphics.DrawString(nameRecipieLabel.Text, new Font("Arial", 12), Brushes.Black, 10, 50);
+            e.Graphics.DrawString(text, new Font("Arial", 12), Brushes.Black, 30, 100);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -77,6 +80,20 @@ namespace Recipies
                 ms.Write(photo, 0, photo.Length);
                 newImage = Image.FromStream(ms, true);
                 return newImage;
+            }
+        }
+    }
+    public static class Extensions
+    {
+        public static IEnumerable<string> Split(this string str, int n)
+        {
+            if (String.IsNullOrEmpty(str) || n < 1)
+            {
+                throw new ArgumentException();
+            }
+            for (int i = 0; i < str.Length; i += n)
+            {
+                yield return str.Substring(i, Math.Min(n, str.Length - i));
             }
         }
     }
