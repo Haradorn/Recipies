@@ -417,7 +417,7 @@ namespace Recipies
                         {
                             recipie.Name = addRecipieForm.textBox1.Text;
                             recipie.Description = addRecipieForm.textBox2.Text;
-                            recipie.Photo = ConvertFiletoByte(addRecipieForm.pictureBox1.ImageLocation);
+                            //recipie.Photo = ConvertFiletoByte(addRecipieForm.pictureBox1.ImageLocation);
                             recipie.HealthGroup = (HealthGroup)addRecipieForm.comboBox1.SelectedItem;
                             db.Entry(recipie).State = EntityState.Modified;
                             db.SaveChanges();

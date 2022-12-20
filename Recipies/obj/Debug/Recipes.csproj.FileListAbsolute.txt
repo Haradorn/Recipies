@@ -91,5 +91,4 @@ C:\Users\User\source\repos\Recipies\Recipies\bin\Debug\System.Text.Json.xml
 C:\Users\User\source\repos\Recipies\Recipies\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\User\source\repos\Recipies\Recipies\bin\Debug\System.ValueTuple.xml
 C:\Users\User\source\repos\Recipies\Recipies\obj\Debug\Recipies.AddRecipieForm.resources
-C:\Users\User\source\repos\Recipies\Recipies\obj\Debug\Recipes.csprojAssemblyReference.cache
 C:\Users\User\source\repos\Recipies\Recipies\obj\Debug\Recipies.LookRecipieForm.resources

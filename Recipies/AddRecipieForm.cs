@@ -28,5 +28,10 @@ namespace Recipies
                 this.pictureBox1.ImageLocation = ofd.FileName;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

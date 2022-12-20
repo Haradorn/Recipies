@@ -27,7 +27,7 @@ namespace Recipies
         private void LookRecipieForm_Load(object sender, EventArgs e)
         {
             this.nameRecipieLabel.Text = name;
-            this.descriptionRecipieLabel.Text = description;
+            this.textBox1.Text = description;
             this.pictureBox1.Image = ConvertBytetoImage(this.photo);
         }
         private string text = "";
@@ -47,9 +47,9 @@ namespace Recipies
         private void printDocument_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             int size = 50;
-            IEnumerable<string> s = descriptionRecipieLabel.Text.Split(size);
+            IEnumerable<string> s = description.Split(size);
             text += String.Join(Environment.NewLine, s);
-
+            //320х250 картинка очень маленькая, а 640х500 очень большая
             e.Graphics.DrawImage(pictureBox1.Image, 450, 50);
             e.Graphics.DrawString(nameRecipieLabel.Text, new Font("Arial", 14), Brushes.Black, 10, 50);
             e.Graphics.DrawString(text, new Font("Arial", 12), Brushes.Black, 30, 100);
@@ -66,7 +66,7 @@ namespace Recipies
                 using (StreamWriter sw = new StreamWriter(sfd.FileName, true))
                 {
                     sw.WriteLine(nameRecipieLabel.Text);
-                    sw.WriteLine(descriptionRecipieLabel.Text);
+                    sw.WriteLine(textBox1.Text);
                     sw.Close();
                 }
             }
