@@ -92,3 +92,6 @@ C:\Users\User\source\repos\Recipies\Recipies\bin\Debug\System.Threading.Tasks.Ex
 C:\Users\User\source\repos\Recipies\Recipies\bin\Debug\System.ValueTuple.xml
 C:\Users\User\source\repos\Recipies\Recipies\obj\Debug\Recipies.AddRecipieForm.resources
 C:\Users\User\source\repos\Recipies\Recipies\obj\Debug\Recipies.LookRecipieForm.resources
+C:\Users\User\source\repos\Recipies\Recipies\obj\Debug\Recipes.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Recipies\Recipies\obj\Debug\Recipes.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\source\repos\Recipies\Recipies\obj\Debug\Recipes.csproj.CoreCompileInputs.cache

@@ -470,8 +470,20 @@ namespace Recipies
                 if (converted == false)
                     return;
                 HealthGroup healthGroup = db.HealthGroups.Find(id);
-                healthGroupListBox.DataSource = healthGroup.Recipies.ToList();
-                healthGroupListBox.DisplayMember = "Name";
+                try
+                {
+                    if (healthGroup.Recipies.ToList().Count != 0)
+                    {
+                        healthGroupListBox.DataSource = healthGroup.Recipies.ToList();
+                        healthGroupListBox.DisplayMember = "Name";
+                    }
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    healthGroupListBox.DataSource = null;
+                    healthGroupListBox.Items.Clear();
+                }
             }
         }
 

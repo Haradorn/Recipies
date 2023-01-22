@@ -83,6 +83,16 @@ namespace Recipies.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _62868_page_facing_up_icon {
+            get {
+                object obj = ResourceManager.GetObject("62868-page-facing-up-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Actions_document_save_icon {
             get {
                 object obj = ResourceManager.GetObject("Actions-document-save-icon", resourceCulture);
@@ -196,6 +206,16 @@ namespace Recipies.Properties {
         internal static System.Drawing.Bitmap print_icon1 {
             get {
                 object obj = ResourceManager.GetObject("print-icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Zoom_icon {
+            get {
+                object obj = ResourceManager.GetObject("Zoom-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
